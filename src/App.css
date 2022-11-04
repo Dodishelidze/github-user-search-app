@@ -1,38 +1,361 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Space Mono";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-dark {
+  background-color: #141d2f;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-light {
+  background-color: #fefefe;
+  height: 100vh;
+}
+.themebutton {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  width: 730px;
+  margin: 0px auto;
+  padding-top: 155px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.dark,
+.light {
+  margin-left: 13px;
+}
+
+.dark {
+  background-color: white;
+  color: #141d2f;
+}
+
+.search {
+  font-family: monospace;
+  outline: none;
+  margin-top: 21px;
+  margin-left: 80px;
+  width: 500px;
+  height: 25px;
+  display: flex;
+  border: none;
+  text-align: left;
+  background-color: #1e2a47;
+  position: absolute;
+  font-size: 24px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-dark {
+  font-family: monospace;
+  outline: none;
+  margin-top: 21px;
+  margin-left: 80px;
+  width: 500px;
+  height: 25px;
+  display: flex;
+  border: none;
+  text-align: left;
+  background-color: white;
+  position: absolute;
+  font-size: 24px;
+  color: #1e2a47;
+}
+.searchsvg {
+  width: 21.22px;
+  height: 21.16px;
+  margin-top: 23px;
+  margin-left: 32px;
+  color: #0079ff;
+  position: absolute;
+  z-index: 1000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainSearch {
+  width: 730px;
+  height: 69px;
+  margin: auto;
+  position: relative;
+  background-color: #1e2a47;
+  border-radius: 15px;
+}
+.mainSearch-dark {
+  width: 730px;
+  height: 69px;
+  margin: auto;
+  position: relative;
+  border-radius: 15px;
+  transition: all 0.5s ease 0s;
+  background: rgb(254, 254, 254);
+
+  box-shadow: rgb(70 96 187 / 20%) 0px 16px 30px -10px;
+}
+
+.title-date {
+  padding-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  position: relative;
+  height: 70px;
+}
+.username {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 30px;
+  color: #0079ff;
+}
+
+img {
+  margin-left: 48px;
+  margin-top: 48px;
+  border-radius: 50%;
+  position: absolute;
+  width: 117px;
+  height: 117px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38.51px;
+  color: #ffffff;
+  padding-top: 14px;
+}
+.title-dark {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38.51px;
+  color: #222731;
+  padding-top: 14px;
+}
+.bio {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 205px;
+  padding-right: 20px;
+  margin-top: 80px;
+  color: white;
+}
+.bio-dark {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 205px;
+  padding-right: 20px;
+  margin-top: 80px;
+  color: #697c9a;
+}
+
+.repoinfo {
+  border-radius: 10px;
+  background-color: #141d2f;
+  margin-left: 180px;
+  padding-right: 80px;
+  width: 392px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.repoinfo-dark {
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 180px;
+  padding-right: 80px;
+  width: 392px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.repo {
+  width: 20px;
+  padding-left: 45px;
+  padding-bottom: 6px;
+  height: 20px;
+}
+.repo p,
+.followers p,
+.following p {
+  color: white;
+  font-size: 30px;
+  line-height: 2.58px;
+}
+
+.repoinfo-dark p {
+  color: #2b3442;
+}
+
+.repoinfo-dark label {
+  color: #4b6a9b;
+}
+
+label {
+  line-height: 19px;
+  font-size: 13px;
+  color: white;
+}
+
+.following {
+  margin-left: -25px;
+}
+.date {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.22px;
+  text-align: right;
+  padding-right: 48px;
+  padding-top: 35px;
+  color: white;
+}
+.date-dark {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.22px;
+  text-align: right;
+  padding-right: 48px;
+  padding-top: 35px;
+  color: #697c9a;
+}
+
+.userProfile {
+  width: 730px;
+  height: 444px;
+  display: block;
+  margin: 24px auto;
+  background-color: #1e2a47;
+  border-radius: 15px;
+}
+.userProfile-dark {
+  width: 730px;
+  height: 444px;
+  display: block;
+  margin: 24px auto;
+  background: rgb(254, 254, 254);
+  box-shadow: rgb(70 96 187 / 20%) 0px 16px 30px -10px;
+
+  border-radius: 15px;
+}
+.location-twitter {
+  display: flex;
+  justify-content: space-between;
+}
+.company-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  display: flex;
+}
+.blog {
+  display: flex;
+}
+.twitter {
+  display: flex;
+}
+.location {
+  display: flex;
+}
+
+.theme {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.theme-dark {
+  display: flex;
+  color: #697c9a;
+  justify-content: center;
+  align-items: center;
+}
+.socialinfo {
+  padding-left: 170px;
+  margin: 15px auto;
+  width: 480px;
+  height: 85px;
+}
+
+.socialinfo-dark {
+  padding-left: 170px;
+  margin: 15px auto;
+  width: 480px;
+  height: 85px;
+}
+
+.socialinfo-dark p {
+  margin-right: 50px;
+  color: #4b6a9b;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.socialinfo p {
+  margin-right: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+.socialinfo svg {
+  padding-top: 15px;
+  padding-right: 20px;
+}
+.socialinfo-dark svg {
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+.theme button {
+  color: #ffffff;
+  background-color: #141d2f;
+  border: none;
+}
+
+.theme-dark button {
+  color: #141d2f;
+  background-color: #ffffff;
+  border: none;
+}
+.buttonsearch {
+  position: absolute !important;
+  justify-content: right;
+  margin-left: 620px;
+  margin-top: 9.5px;
+  width: 106px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  background-color: #0079ff;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.search ::placeholder {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Space Mono";
+  font-weight: 10px;
+}
+
+.title {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38.51px;
+  color: #ffffff;
 }
