@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/github.io/github-user-search-app/static/css/main.30b6bd85.css",
+    "main.js": "/github.io/github-user-search-app/static/js/main.05120b0a.js",
+    "static/media/space-mono-all-400-normal.woff": "/github.io/github-user-search-app/static/media/space-mono-all-400-normal.20837090c5c0e7ba73b2.woff",
+    "static/media/space-mono-latin-400-normal.woff2": "/github.io/github-user-search-app/static/media/space-mono-latin-400-normal.e7409717e7e2fcddb691.woff2",
+    "static/media/space-mono-latin-ext-400-normal.woff2": "/github.io/github-user-search-app/static/media/space-mono-latin-ext-400-normal.d2d912f768aec7af94de.woff2",
+    "static/media/space-mono-vietnamese-400-normal.woff2": "/github.io/github-user-search-app/static/media/space-mono-vietnamese-400-normal.ff735bac362e5c02ca82.woff2",
+    "index.html": "/github.io/github-user-search-app/index.html",
+    "main.30b6bd85.css.map": "/github.io/github-user-search-app/static/css/main.30b6bd85.css.map",
+    "main.05120b0a.js.map": "/github.io/github-user-search-app/static/js/main.05120b0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30b6bd85.css",
+    "static/js/main.05120b0a.js"
+  ]
+}
